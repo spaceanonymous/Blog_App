@@ -50,7 +50,7 @@ app.post("/blogtoview",(req,res)=>{
       topic_num_to_display=i;
     }
     if(i==topic_arr.length-1 && topic_arr[i]!=req.body.topic_name){
-      res.render("notfound.ejs");
+      alert("No such topic found");
     }
   }
   res.render("blog.ejs",{
